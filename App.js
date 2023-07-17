@@ -13,7 +13,7 @@ import aspirationalAppImage from "./assets/images/aspirationalAppImage.png";
 // FullBleedImage is a Dark component and shows an image that spans the entire width of the page
 // Inputs:
 // - imageAltTag: A descriptive image tag of the format: 4K photo shoot of product being used in ADD SCENARIO.
-// - imageSrc: The image src following createReactApp style as per the template above.
+// - imageSrcWidth1600pxHeight900px: The image src following createReactApp style as per the template above.
 import FullBleedImage from "./fullBleedImage";
 
 // Headline is a Light component and shows a title and paragraph of descriptive text
@@ -66,7 +66,7 @@ export default function App() {
         keyFeature1="Eat bug, wasps and worms."
         keyFeature2="Suprise your friends with your culinary superiority"
         keyFeature3="Reap new health benefits and save the planet"
-        screenMockUpSrc={aspirationalAppImage}
+        screenMockUpSrcWidth290pxHeight624px={aspirationalAppImage}
         imageAltTag="4K photo shoot hero image of product being used in real life"
       />
       {/* End Hero */}
@@ -79,7 +79,7 @@ export default function App() {
       {/* End First light section */}
       {/* First Dark section goes here */}
       <FullBleedImage
-        imageSrc={productBeingUsedInRealLife}
+        imageSrcWidth1600pxHeight900px={productBeingUsedInRealLife}
         imageAltTag="4K photo shoot of product being used in real life"
       />
       {/* End first Dark section */}

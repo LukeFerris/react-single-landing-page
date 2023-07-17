@@ -10,7 +10,7 @@ export default function HeroApp({
   keyFeature1,
   keyFeature2,
   keyFeature3,
-  screenMockUpSrc,
+  screenMockUpSrcWidth290pxHeight624px,
   imageAltTag,
 }) {
   <Box
@@ -70,7 +70,10 @@ export default function HeroApp({
         minWidth: { xs: "", md: "5vw" },
       }}
     ></Box>
-    <IPhoneMockup screenMockUpSrc={screenMockUpSrc} imageAltTag={imageAltTag} />
+    <IPhoneMockup
+      screenMockUpSrc={screenMockUpSrcWidth290pxHeight624px}
+      imageAltTag={imageAltTag}
+    />
     <Box
       sx={{
         flexBasis: { xs: "", md: "20vw" },

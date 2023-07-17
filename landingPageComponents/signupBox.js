@@ -3,10 +3,10 @@ import { Button, TextField, Typography } from "@mui/material";
 // import { subscribe } from "../../responsible-for/managingSignups/signup";
 
 export default function SignupBox({ isDark = false }) {
-  const [email, setEmail] = useState < string > "";
-  const [isValidEmail, setIsValidEmail] = useState < boolean > false;
-  const [isSent, setIsSent] = useState < boolean > false;
-  const [isError, setIsError] = useState < boolean > false;
+  const [email, setEmail] = useState("");
+  const [isValidEmail, setIsValidEmail] = useState(false);
+  const [isSent, setIsSent] = useState(false);
+  const [isError, setIsError] = useState(false);
 
   function validateEmail(email) {
     var re = /\S+@\S+\.\S+/;
@@ -60,7 +60,7 @@ export default function SignupBox({ isDark = false }) {
           sx={{
             display:
               isValidEmail || !email ? "none" : isValidEmail ? "none" : "block",
-            color: props.isDark ? "#FFF" : "#000",
+            color: isDark ? "#FFF" : "#000",
           }}
         >
           Nearly there! Just complete a valid email.
@@ -77,10 +77,7 @@ export default function SignupBox({ isDark = false }) {
             marginBottom: "10px",
           }}
         >
-          <Typography
-            variant="h5"
-            style={{ color: props.isDark ? "#FFF" : "#000" }}
-          >
+          <Typography variant="h5" style={{ color: isDark ? "#FFF" : "#000" }}>
             That's a wrap! Thanks, we'll be in touch.
           </Typography>
         </div>

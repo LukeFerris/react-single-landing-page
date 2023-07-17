@@ -3,28 +3,28 @@
 // MUI imports
 
 // Project imports
-import Gradient from "../elements/backgroundGradient";
+import Gradient from "./backgroundGradient";
 
 // images imports
-// always assume the images will be in ../../assets/images
-import productBeingUsedInRealLife from "../../assets/images/productBeingUsedInRealLife.png";
-import aspirationalAppImage from "../../assets/images/aspirationalAppImage.png";
+// always assume the images will be in ./assets/images
+import productBeingUsedInRealLife from "./assets/images/productBeingUsedInRealLife.png";
+import aspirationalAppImage from "./assets/images/aspirationalAppImage.png";
 
 // FullBleedImage is a Dark component and shows an image that spans the entire width of the page
 // Inputs:
 // - imageAltTag: A descriptive image tag of the format: 4K photo shoot of product being used in ADD SCENARIO.
 // - imageSrc: The image src following createReactApp style as per the template above.
-import FullBleedImage from "../elements/fullBleedImage";
+import FullBleedImage from "./fullBleedImage";
 
 // Headline is a Light component and shows a title and paragraph of descriptive text
 // Inputs:
 // - headline: The headline text.
 // - subText: A paragraph of descriptive text related to the headline.
-import Headline from "../elements/headline";
+import Headline from "./headline";
 
 // The following are standard system imports and do not need to be changed as they are used by all landing pages
-import TrailingSignup from "../elements/trailingSignup";
-import Footer from "../elements/footer";
+import TrailingSignup from "./trailingSignup";
+import Footer from "./footer";
 
 // HeroApp is a Hero component that goes at the top of the page. It shows a visual image, a headline and a signup box
 // Inputs:
@@ -35,7 +35,7 @@ import Footer from "../elements/footer";
 // - keyFeature3: 10-15 words on the third key feature of the product to highlight
 // - screenMockUpSrc: The src of an image with width 290px and height: 624px. This will be shown embedded in the iphone mockup.
 // - imageAltTag: Image alt for the image, should be a variantion of "4K photo shoot hero image of product being used in real life"
-import HeroApp from "./landingPageComponents/elements/heroApp";
+import HeroApp from "./heroApp";
 
 // the hardcoded expectation is that the text json file will be here.
 // all components are passed this object so that they have access to the text content of the site

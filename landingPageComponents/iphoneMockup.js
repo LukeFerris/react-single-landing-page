@@ -1,5 +1,5 @@
 import { Box } from "@mui/material";
-import iphoneMockup from "../../assets/static-images/iphone-mockup.png";
+import iphoneMockup from "./iphone-mockup.png";
 
 export default function IPhoneMockup({ screenMockUpSrc, imageAltTag }) {
   return (

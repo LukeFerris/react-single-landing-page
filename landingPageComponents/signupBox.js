@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Button, TextField, Typography } from "@mui/material";
-// import { subscribe } from "../../responsible-for/managingSignups/signup";
+import { subscribe } from "./signup";
 
 export default function SignupBox({ isDark = false }) {
   const [email, setEmail] = useState("");
@@ -22,7 +22,7 @@ export default function SignupBox({ isDark = false }) {
     if (isValidEmail && email) {
       try {
         let newSubscriber = { id: email };
-        // await subscribe(newSubscriber);
+        await subscribe(newSubscriber);
         setIsSent(true);
       } catch (ex) {
         setIsError(true);

@@ -51,10 +51,11 @@ import text from "assets/text/text.json";
 // - The next component must be of type Origin.React.LandingPage.DarkComponents.*
 // - This pattern should continue as required until the bottom of the page
 // - The page should finish with an Origin.React.LandingPage.Footer component
+// - Custom components count as light components and so should appear in the flow after a dark component
 // the content rules are as follows:
 // - All text is generated later and contained in the text.json file
 // - You must use descriptive text placeholders (e.g. text.Key_Benefit_1_Headline_Text_Ten_Words) to show which content is required and include the target length of the content
-// - Custom components count as light components and so should appear in the flow after a dark component
+// - Image alt tags should generally include the words 4K photo shoot
 
 export default function App() {
   return (

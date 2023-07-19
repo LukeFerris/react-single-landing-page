@@ -23,7 +23,6 @@ export const theme = createTheme({
       fontSize: "42px",
       fontWeight: "900",
       fontFamily: "Red Hat Display",
-      color: "#FFF",
     },
     body1: {
       fontSize: "14px", // add this line to change font size of non-heading text

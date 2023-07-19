@@ -86,7 +86,7 @@ export default function TrailingSignup() {
           </svg>
         </div>
         <div style={{ textAlign: "center", marginTop: "40px" }}>
-          <Typography variant="h4" style={{ flexBasis: "40%" }}>
+          <Typography variant="h4" style={{ flexBasis: "40%", color: "#FFF" }}>
             What are you waiting for?
           </Typography>
           <div

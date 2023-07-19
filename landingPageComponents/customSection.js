@@ -12,11 +12,11 @@ import { Typography } from "@mui/material";
 // a description of what the custom section does goes here
 export default function CustomSectionName() {
   return (
-    // the styles in this div can be updated / added to
-    // but the display, justifyContent and paddingBottom must remain as they are.
+    // the styles in this div should not be udpated
     <div
       style={{
         display: "flex",
+        flexDirection: "row",
         justifyContent: "center",
         paddingBottom: "60px",
       }}

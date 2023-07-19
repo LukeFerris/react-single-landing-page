@@ -12,6 +12,7 @@ export default function HeroApp({
   keyFeature3_5to15Words,
   screenMockUpSrcWidth290pxHeight624px,
   imageAltTag,
+  buttonText,
 }) {
   return (
     <Box
@@ -55,7 +56,7 @@ export default function HeroApp({
         </Typography>
         <Typography variant="h2">{subHeading_15to20Words}</Typography>
 
-        <SignupBox isDark={false} />
+        <SignupBox isDark={false} buttonText={buttonText} />
         <List dense={true} style={{ marginTop: "15px" }}>
           <CheckedListItem checkListItemText={keyFeature1_5to15Words} />
           <CheckedListItem checkListItemText={keyFeature2_5to15Words} />

@@ -35,6 +35,7 @@ import Footer from "./footer";
 // - keyFeature3_5to15Words: 10-15 words on the third key feature of the product to highlight
 // - screenMockUpSrc: The src of an image with width 290px and height: 624px. This will be shown embedded in the iphone mockup.
 // - imageAltTag: Image alt for the image, should be a variantion of "4K photo shoot hero image of product being used in real life"
+// - buttonText: One or two words that relate to the call to action of this site. E.g. request invite or subsribe or start.
 import HeroApp from "./heroApp";
 
 // the hardcoded expectation is that the text json file will be here.
@@ -51,7 +52,7 @@ import text from "assets/text/text.json";
 // - Custom components count as light components and so should appear in the flow after a dark component
 // the content rules are as follows:
 // - All text is generated later and contained in the text.json file
-// - You must use descriptive text placeholders (e.g. text.Key_Benefit_1_Headline_Text_Ten_Words) to show which content is required and include the target length of the content
+// - You must use descriptive text placeholders (e.g. text.Key_Benefit_1_Headline_Text_Ten_Words) to show which content is required and include the target length of the content in the name
 // - Image alt tags should generally include the words 4K photo shoot
 
 export default function App() {
@@ -70,6 +71,7 @@ export default function App() {
         keyFeature3_5to15Words="Reap new health benefits and save the planet"
         screenMockUpSrcWidth290pxHeight624px={aspirationalAppImage}
         imageAltTag="4K photo shoot hero image of product being used in real life (never a logo!)"
+        buttonText="1-2 words only e.g. Request Invite"
       />
       {/* End Hero */}
 
@@ -92,7 +94,7 @@ export default function App() {
       />
       {/* End Additional Sections */}
 
-      <TrailingSignup />
+      <TrailingSignup buttonText="1-2 words only e.g. Request Invite" />
       <Footer />
 
       {/* End Example Layout */}

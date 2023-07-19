@@ -1,7 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import SignupBox from "./signupBox";
 
-export default function TrailingSignup() {
+export default function TrailingSignup({ buttonText }) {
   return (
     <div
       style={{
@@ -96,7 +96,7 @@ export default function TrailingSignup() {
               width: "100%",
             }}
           >
-            <SignupBox isDark={true} />
+            <SignupBox isDark={true} buttonText={buttonText} />
           </div>
           <div style={{ height: "50px" }}>&nbsp;</div>
         </div>

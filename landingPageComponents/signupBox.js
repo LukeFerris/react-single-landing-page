@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Button, TextField, Typography } from "@mui/material";
 import { subscribe } from "./signup";
 
-export default function SignupBox({ isDark = false }) {
+export default function SignupBox({ isDark = false, buttonText }) {
   const [email, setEmail] = useState("");
   const [isValidEmail, setIsValidEmail] = useState(false);
   const [isSent, setIsSent] = useState(false);
@@ -53,7 +53,7 @@ export default function SignupBox({ isDark = false }) {
             onClick={subscribeCustomer}
             variant="contained"
           >
-            Request Invite
+            {buttonText}
           </Button>
         </div>
         <Typography

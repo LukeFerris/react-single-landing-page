@@ -4,6 +4,7 @@
 // - Add any require javascript functions and React functions as required
 // - Ensure that any imports are included.
 // - Add a detailed specification of what you've built in the comment directly above the function name
+// - Make sure you add any required headings or labels to ensure the section is properly understood by the user
 
 // You can assume Material UI (MUI) components and anything present as standard in CreateReactApp
 import { Typography } from "@mui/material";

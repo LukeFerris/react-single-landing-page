@@ -71,7 +71,7 @@ export default function App() {
         keyFeature2_5to15Words="Suprise your friends with your culinary superiority"
         keyFeature3_5to15Words="Reap new health benefits and save the planet"
         screenMockUpSrcWidth290pxHeight624px={aspirationalAppImage}
-        imageAltTag="4K photo shoot hero image of product being used in real life"
+        imageAltTag="4K photo shoot hero image of product being used in real life (never a logo!)"
       />
       {/* End Hero */}
 

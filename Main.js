@@ -37,6 +37,9 @@ import Footer from "./footer";
 // - imageAltTag: Image alt for the image, should be a variantion of "4K photo shoot hero image of product being used in real life"
 import HeroApp from "./heroApp";
 
+// Any custom components should be imported here
+// import Custom from "./customComponent";
+
 // the hardcoded expectation is that the text json file will be here.
 // all components are passed this object so that they have access to the text content of the site
 import text from "assets/text/text.json";
@@ -50,7 +53,8 @@ import text from "assets/text/text.json";
 // - The page should finish with an Origin.React.LandingPage.Footer component
 // the content rules are as follows:
 // - All text is generated later and contained in the text.json file
-// - You must use descriptive text placeholders (e.g. text.Key_Benefit_1_Headline_Text_Ten_Words) to show which content is required
+// - You must use descriptive text placeholders (e.g. text.Key_Benefit_1_Headline_Text_Ten_Words) to show which content is required and include the target length of the content
+// - Custom components count as light components and so should appear in the flow after a dark component
 
 export default function App() {
   return (

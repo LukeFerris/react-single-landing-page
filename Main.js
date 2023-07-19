@@ -52,6 +52,7 @@ import text from "assets/text/text.json";
 // - Custom components count as light components and so should appear in the flow after a dark component
 // - Pay very close attention to the case of custom component filenames. Use the casing found in the package specification.
 // - E.g. if the package specification shows the file name as Testimonials.js then make sure you important from Testimonials not testimonials (note the change in first letter case)
+// - Content for inputs to custom components should be constructed on this page, with only strings being pulled from text.json
 
 // the content rules are as follows:
 // - All text is generated later and contained in the text.json file

@@ -37,9 +37,6 @@ import Footer from "./footer";
 // - imageAltTag: Image alt for the image, should be a variantion of "4K photo shoot hero image of product being used in real life"
 import HeroApp from "./heroApp";
 
-// Any custom components should be imported here
-// import Custom from "./customComponent";
-
 // the hardcoded expectation is that the text json file will be here.
 // all components are passed this object so that they have access to the text content of the site
 import text from "assets/text/text.json";

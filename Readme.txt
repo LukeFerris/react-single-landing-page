@@ -21,6 +21,7 @@ fullBleedImage.js
 - even without fixed purpose it is good to have at least one fullbleedimage to provide color and an engaging style
  
 landingPageComponents/customSection.js (template file)
+Template File Path: 'landingPageComponents/customSection.js'
 - A template file for when none of the other sections fit the requirement
 - Can be customised with any HTML or javascript content required.
 - Has access to MaterialUI components, React components and any other packages available as part of CreateReactApp

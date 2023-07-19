@@ -50,6 +50,9 @@ import text from "assets/text/text.json";
 // - This pattern should continue as required until the bottom of the page
 // - The page should finish with an Origin.React.LandingPage.Footer component
 // - Custom components count as light components and so should appear in the flow after a dark component
+// - Pay very close attention to the case of custom component filenames. Use the casing found in the package specification.
+// - E.g. if the package specification shows the file name as Testimonials.js then make sure you important from Testimonials not testimonials (note the change in first letter case)
+
 // the content rules are as follows:
 // - All text is generated later and contained in the text.json file
 // - You must use descriptive text placeholders (e.g. text.Key_Benefit_1_Headline_Text_Ten_Words) to show which content is required and include the target length of the content in the name

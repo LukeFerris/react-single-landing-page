@@ -24,9 +24,11 @@ import FullBleedImage from "./fullBleedImage";
 // - subText: A paragraph of descriptive text related to the headline.
 import Headline from "./headline";
 
-// The following are standard system imports and do not need to be changed as they are used by all landing pages
+// An import for a trailing signup box
 // Type: Dark
 import TrailingSignup from "./trailingSignup";
+
+// Footer is used for all sites
 // Type: Light
 import Footer from "./footer";
 
@@ -51,6 +53,8 @@ import text from "assets/text/text.json";
 // the layout rules are as follows:
 // - For landing pages or marketing pages, the page must start with a component of type Origin.React.LandingPage.HeroWithSignUpBox
 // - For more bespoke websites, HeroWithSignUpBox does not need to be included and will likely feature more modifications.
+// - Landing pages should have a TrailingSignup just before the footer.
+// - More bespoke pages do not need to include a TrailingSignup.
 // - Components should alternative between dark and light to give the right aesthetic.
 // - The page should finish with an Origin.React.LandingPage.Footer component
 // - Pay very close attention to the case of custom component filenames. Use the casing found in the package specification.

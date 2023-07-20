@@ -32,5 +32,17 @@ customSection.js
 - Appears vertically in the page just like the other packages
 - Where required a solution can include multiple customSection.js sections - all with different file names and component names.
 
+Deploy inputs:
+- If you choose to use a hero image / sign up box, the solution will also require a deployinput from a database and an admin website.
+- To do this, add the following two deployInputs:  
+{
+"type": "Database.API.PostOnly",
+"envName": "REACT_APP_API_URL"
+},
+{
+"type": "Database.Dynamo.Admin.SiteUrl",
+"envName": "DEPENDS_ON"
+}
+- If no sign up box is present, then these are not required.
 
 

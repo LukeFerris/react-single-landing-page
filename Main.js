@@ -1,7 +1,5 @@
 // React imports
 
-// MUI imports
-
 // Project imports
 import Gradient from "./backgroundGradient";
 

@@ -64,6 +64,9 @@ import text from "assets/text/text.json";
 // - You must use descriptive text placeholders (e.g. text.Key_Benefit_1_Headline_Text_Ten_Words) to show which content is required and include the target length of the content in the name
 // - Image alt tags should generally include the words 4K photo shoot
 
+// custom imports go here
+// - Importantly, all custom components will end up in ./landingPageComponents/ so all custom imports should assume the file is located there
+
 export default function App() {
   return (
     <div style={{ overflow: "hidden" }}>

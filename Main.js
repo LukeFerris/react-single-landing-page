@@ -11,22 +11,27 @@ import productBeingUsedInRealLife from "./assets/images/productBeingUsedInRealLi
 import aspirationalAppImage from "./assets/images/aspirationalAppImage.png";
 
 // FullBleedImage is a Dark component and shows an image that spans the entire width of the page
+// Type: Dark
 // Inputs:
 // - imageAltTag: A descriptive image tag of the format: 4K photo shoot of product being used in ADD SCENARIO.
 // - imageSrcWidth1600pxHeight900px: The image src following createReactApp style as per the template above.
 import FullBleedImage from "./fullBleedImage";
 
 // Headline is a Light component and shows a title and paragraph of descriptive text
+// Type: Light
 // Inputs:
 // - headline: The headline text.
 // - subText: A paragraph of descriptive text related to the headline.
 import Headline from "./headline";
 
 // The following are standard system imports and do not need to be changed as they are used by all landing pages
+// Type: Dark
 import TrailingSignup from "./trailingSignup";
+// Type: Light
 import Footer from "./footer";
 
-// HeroApp is a Hero component that goes at the top of the page. It shows a visual image, a headline and a signup box
+// HeroApp is a Hero component that for landing pages, goes at the top of the page. It shows a visual image, a headline and a signup box
+// Type: Dark
 // Inputs:
 // - mainHeading_3to5Words: 1-4 words
 // - subHeading_15to20Words: 10-15 words that act as a product tagline.
@@ -42,14 +47,12 @@ import HeroApp from "./heroApp";
 // all components are passed this object so that they have access to the text content of the site
 import text from "assets/text/text.json";
 
-// this page is a container for landing page components which will be merged in.
+// this page is a container for vertically scrolling standard websites.
 // the layout rules are as follows:
-// - The page must start with a component of type Origin.React.LandingPage.HeroWithSignUpBox
-// - The next component must be of type Origin.React.LandingPage.LightComponents.*
-// - The next component must be of type Origin.React.LandingPage.DarkComponents.*
-// - This pattern should continue as required until the bottom of the page
+// - For landing pages or marketing pages, the page must start with a component of type Origin.React.LandingPage.HeroWithSignUpBox
+// - For more bespoke websites, HeroWithSignUpBox does not need to be included and will likely feature more modifications.
+// - Components should alternative between dark and light to give the right aesthetic.
 // - The page should finish with an Origin.React.LandingPage.Footer component
-// - Custom components count as light components and so should appear in the flow after a dark component
 // - Pay very close attention to the case of custom component filenames. Use the casing found in the package specification.
 // - E.g. if the package specification shows the file name as Testimonials.js then make sure you important from Testimonials not testimonials (note the change in first letter case)
 // - Content for inputs to custom components should be constructed on this page, with only strings being pulled from text.json
@@ -64,7 +67,7 @@ export default function App() {
     <div style={{ overflow: "hidden" }}>
       <Gradient />
 
-      {/* An Example layout is shown below. This should be changed */}
+      {/* An Example layout for landing pages is shown below. This should be changed */}
 
       {/* Choice of heroApp, heroRealProduct or heroSaas goes here dependent on what type of product it is */}
       <HeroApp
